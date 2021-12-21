@@ -42,14 +42,10 @@ class Puzzle():
         return False
 
     def show_puzzle(self, a):
-        for i in range(self.m):
-            for j in range(self.m):
-                print(a[i][j],end = " ")
-            print()
+        return a
 
     def final_answer(self):
         if (self.sudoku(self.grid, 0, 0)):
             return self.show_puzzle(self.grid)
         else:
-            return "Solution does not exist"
-
+            return None
