@@ -9,10 +9,10 @@ def solve_sudoku():
     task = solve_puzzle.apply_async(result['grid'])
     return jsonify(task.id)
 
-@app.route('/status/<task_id>', methods=['GET'])
+@app.route('/status/<task_id>', methods=['POST'])
 def taskstatus(task_id):
     task = solve_puzzle.AsyncResult(task_id)
-    return jsonify(task.state)
+    return jsonify(task.get())
 
 if __name__ == '__main__':
-    app.run(debug = True)
+    app.run()
