@@ -4,7 +4,7 @@
   - Python 3
 
 ### Docker
-  - docker-compose --build
+  - docker-compose build
   - docker-compose up --remove-orphans
   - docker-compose stop (stops the cointainer)
   - docker-compose down (destroys the cointainer)
