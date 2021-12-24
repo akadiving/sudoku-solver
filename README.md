@@ -17,7 +17,7 @@
         [0,4,0,0,0,3,0,0,0],[0,0,0,3,6,0,0,7,2],[0,7,0,0,0,0,0,0,3],[9,0,3,0,0,0,0,0,4]]
       } 
   - Each array represents exactly one row of a sudoku grid by order
-  - Argument Exmaple for "/status/<task_id>" - endpoint (supports only GET method):
+  - Argument Example for "/status/<task_id>" - endpoint (supports only GET method):
     type a task id to check the reseult (http://0.0.0.0:5000/status/def76ecf-74a2-4241-891d-5fafdeb6778f)
 
 ### URLS
